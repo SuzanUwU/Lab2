@@ -16,4 +16,12 @@ def calculate_bmi(height, weight):
     # Code to display the calculated BMI
     print("BMI is " + str(BMI) + "\nThis person is " + user)
 
+    if user == "Under weight":
+        return -1
+    elif user == "Normal weight":
+        return 0
+    elif user == "Over weight":
+        return 1
+
+
 calculate_bmi(weight=57, height=1.73)
